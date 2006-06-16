@@ -1,0 +1,69 @@
+chmlib 
+------------------------------------------- 
+CHMLIB is a library for dealing with Microsoft ITSS/CHM format files.
+Right now, it is a very simple library, but sufficient for dealing with
+all of the .chm files I've come across. Due to the fairly well-designed
+indexing built into this particular file format, even a small library is
+able to gain reasonably good performance indexing into ITSS archives.
+
+Runtime requirements:
+  cygwin-1.5.18-1
+
+Build requirements:
+  cygwin-1.5.18-1
+  autoconf2.5-2.59-3
+  binutils-20050610-1
+  gawk-3.1.5-1
+  gcc-core-3.4.4-1
+  libtool1.5-1.5.20-1
+  make-3.80-1
+  sed-4.1.4-1
+
+Canonical homepage:
+  http://66.93.236.84/~jedwin/projects/chmlib/
+
+-------------------------------------------
+
+Build instructions:
+  unpack chmlib-0.37-1-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  ./chmlib-0.37-1.sh all
+
+This will create:
+  /usr/src/chmlib-0.37-1-src.tar.bz2
+  /usr/src/chmlib-0.37-1.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /usr/bin/cygchm-0.dll
+  /usr/include/chm_lib.h
+  /usr/lib/libchm.a
+  /usr/lib/libchm.dll.a
+  /usr/lib/libchm.la
+  /usr/share/doc/chmlib-0.37/AUTHORS
+  /usr/share/doc/chmlib-0.37/COPYING
+  /usr/share/doc/chmlib-0.37/INSTALL
+  /usr/share/doc/chmlib-0.37/NEWS
+  /usr/share/doc/chmlib-0.37/README
+  /usr/share/doc/Cygwin/chmlib-0.37.README
+
+------------------
+
+Port Notes:
+
+----- version 0.37-1 -----
+Version bump to fix two security bugs.
+
+----- version 0.36-1 -----
+Version bump.
+
+----- version 0.35-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/
