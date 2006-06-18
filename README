@@ -7,49 +7,64 @@ indexing built into this particular file format, even a small library is
 able to gain reasonably good performance indexing into ITSS archives.
 
 Runtime requirements:
-  cygwin-1.5.18-1
+  cygwin-1.5.20-1
 
 Build requirements:
-  cygwin-1.5.18-1
-  autoconf2.5-2.59-3
+  cygwin-1.5.20-1
+  autoconf2.5-2.59-2
+  automake1.9-1.9.6-1
   binutils-20050610-1
-  gawk-3.1.5-1
+  gawk-3.1.5-2
   gcc-core-3.4.4-1
-  libtool1.5-1.5.20-1
+  libtool1.5-1.5.22-1
   make-3.80-1
-  sed-4.1.4-1
+  sed-4.1.5-1
 
 Canonical homepage:
-  http://66.93.236.84/~jedwin/projects/chmlib/
+  http://morte.jedrea.com/~jedwin/projects/chmlib/
 
 -------------------------------------------
 
 Build instructions:
-  unpack chmlib-0.37-1-src.tar.bz2
+  unpack chmlib-0.38-1-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  ./chmlib-0.37-1.sh all
+  ./chmlib-0.38-1.sh all
 
 This will create:
-  /usr/src/chmlib-0.37-1-src.tar.bz2
-  /usr/src/chmlib-0.37-1.tar.bz2
+  /usr/src/chmlib-0.38-1-src.tar.bz2
+  /usr/src/chmlib-0.38-1.tar.bz2
+  /usr/src/chmlib-devel-0.38-1.tar.bz2
+  /usr/src/libchm0-0.38-1.tar.bz2
 
 -------------------------------------------
 
 Files included in the binary package:
 
+  /usr/bin/chm_http.exe
+  /usr/bin/enum_chmLib.exe
+  /usr/bin/enumdir_chmLib.exe
+  /usr/bin/extract_chmLib.exe
+  /usr/bin/test_chmLib.exe
+  /usr/share/doc/Cygwin/chmlib-0.38.README
+  /usr/share/doc/chmlib-0.38/AUTHORS
+  /usr/share/doc/chmlib-0.38/COPYING
+  /usr/share/doc/chmlib-0.38/INSTALL
+  /usr/share/doc/chmlib-0.38/NEWS
+  /usr/share/doc/chmlib-0.38/README
+
+Files included in the runtime library package:
+
   /usr/bin/cygchm-0.dll
+
+Files included in the devel package:
+
   /usr/include/chm_lib.h
+  /usr/include/lzx.h
   /usr/lib/libchm.a
   /usr/lib/libchm.dll.a
   /usr/lib/libchm.la
-  /usr/share/doc/chmlib-0.37/AUTHORS
-  /usr/share/doc/chmlib-0.37/COPYING
-  /usr/share/doc/chmlib-0.37/INSTALL
-  /usr/share/doc/chmlib-0.37/NEWS
-  /usr/share/doc/chmlib-0.37/README
-  /usr/share/doc/Cygwin/chmlib-0.37.README
 
 ------------------
 
