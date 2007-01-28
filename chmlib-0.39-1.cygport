@@ -1,0 +1,11 @@
+DESCRIPTION="Compiled HTML Help file library"
+HOMEPAGE="http://morte.jedrea.com/~jedwin/projects/chmlib/"
+SRC_URI="${HOMEPAGE}/${P}.tar.bz2"
+
+CYGCONF_ARGS="--disable-io64 --disable-pread --enable-examples"
+
+PKG_NAMES="${PN} libchm0 libchm-devel"
+PKG_HINTS="setup runtime devel"
+PKG_CONTENTS[0]='usr/bin/*.exe usr/share/'
+PKG_CONTENTS[1]='usr/bin/*.dll'
+PKG_CONTENTS[2]='usr/include/ usr/lib/'

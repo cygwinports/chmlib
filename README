@@ -7,18 +7,19 @@ indexing built into this particular file format, even a small library is
 able to gain reasonably good performance indexing into ITSS archives.
 
 Runtime requirements:
-  cygwin-1.5.20-1
+  cygwin-1.5.23-2
 
 Build requirements:
-  cygwin-1.5.20-1
-  autoconf2.5-2.59-2
-  automake1.9-1.9.6-1
-  binutils-20050610-1
-  gawk-3.1.5-2
-  gcc-core-3.4.4-1
-  libtool1.5-1.5.22-1
-  make-3.80-1
-  sed-4.1.5-1
+  cygwin-1.5.23-2
+  autoconf2.5-2.61-1
+  automake1.9-1.9.6-2
+  binutils-20060817-1
+  cygport-0.2.9-1
+  gawk-3.1.5-4
+  gcc-core-3.4.4-3
+  libtool1.5-1.5.23a-2
+  make-3.81-1
+  sed-4.1.5-2
 
 Canonical homepage:
   http://morte.jedrea.com/~jedwin/projects/chmlib/
@@ -26,17 +27,17 @@ Canonical homepage:
 -------------------------------------------
 
 Build instructions:
-  unpack chmlib-0.38-1-src.tar.bz2
+  unpack chmlib-0.39-1-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  ./chmlib-0.38-1.sh all
+  cygport ./chmlib-0.39-1.cygport all
 
 This will create:
-  /usr/src/chmlib-0.38-1-src.tar.bz2
-  /usr/src/chmlib-0.38-1.tar.bz2
-  /usr/src/chmlib-devel-0.38-1.tar.bz2
-  /usr/src/libchm0-0.38-1.tar.bz2
+  /usr/src/chmlib-0.39-1-src.tar.bz2
+  /usr/src/chmlib-0.39-1.tar.bz2
+  /usr/src/libchm-devel-0.39-1.tar.bz2
+  /usr/src/libchm0-0.39-1.tar.bz2
 
 -------------------------------------------
 
@@ -47,12 +48,12 @@ Files included in the binary package:
   /usr/bin/enumdir_chmLib.exe
   /usr/bin/extract_chmLib.exe
   /usr/bin/test_chmLib.exe
-  /usr/share/doc/Cygwin/chmlib-0.38.README
-  /usr/share/doc/chmlib-0.38/AUTHORS
-  /usr/share/doc/chmlib-0.38/COPYING
-  /usr/share/doc/chmlib-0.38/INSTALL
-  /usr/share/doc/chmlib-0.38/NEWS
-  /usr/share/doc/chmlib-0.38/README
+  /usr/share/doc/Cygwin/chmlib-0.39.README
+  /usr/share/doc/chmlib-0.39/AUTHORS
+  /usr/share/doc/chmlib-0.39/COPYING
+  /usr/share/doc/chmlib-0.39/INSTALL
+  /usr/share/doc/chmlib-0.39/NEWS
+  /usr/share/doc/chmlib-0.39/README
 
 Files included in the runtime library package:
 
@@ -69,6 +70,12 @@ Files included in the devel package:
 ------------------
 
 Port Notes:
+
+----- version 0.39-1 -----
+Version bump.
+
+----- version 0.38-1 -----
+Version bump.
 
 ----- version 0.37-1 -----
 Version bump to fix two security bugs.
