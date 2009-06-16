@@ -1,0 +1,11 @@
+DESCRIPTION="Compiled HTML Help file library"
+HOMEPAGE="http://www.jedrea.com/chmlib/"
+SRC_URI="${HOMEPAGE}/${P}.tar.bz2"
+PATCH_URI="0.39-no-undefined.patch"
+
+PKG_NAMES="${PN} libchm0 libchm-devel"
+chmlib_CONTENTS='usr/bin/*.exe usr/share/'
+libchm0_CONTENTS='usr/bin/cygchm-0.dll'
+libchm_devel_CONTENTS='usr/include/ usr/lib/'
+
+CYGCONF_ARGS="--disable-io64 --enable-examples"

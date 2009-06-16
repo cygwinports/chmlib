@@ -1,7 +1,6 @@
-category: Libs
-requires: cygwin
-external-source: chmlib
-sdesc: "Library for reading ITSS/CHM files (development)"
+category: Text
+requires: cygwin libchm0 libgcc1
+sdesc: "Library for reading ITSS/CHM files (utilities)"
 ldesc: "CHMLIB is a library for dealing with Microsoft ITSS/CHM format files.
 Right now, it is a very simple library, but sufficient for dealing with
 all of the .chm files I've come across. Due to the fairly well-designed

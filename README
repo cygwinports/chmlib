@@ -7,18 +7,18 @@ indexing built into this particular file format, even a small library is
 able to gain reasonably good performance indexing into ITSS archives.
 
 Runtime requirements:
-  cygwin-1.5.23-2
+  cygwin-1.7.0-49
+  libgcc1-4.3.2-2
 
 Build requirements:
-  cygwin-1.5.23-2
-  autoconf2.5-2.61-1
-  automake1.9-1.9.6-2
-  binutils-20060817-1
-  cygport-0.2.9-1
-  gawk-3.1.5-4
-  gcc-core-3.4.4-3
-  libtool1.5-1.5.23a-2
-  make-3.81-1
+  autoconf2.5-2.63-10
+  automake1.10-1.10.2-10
+  binutils-20080624-2
+  cygport-0.9.6-1
+  gawk-3.1.6-2
+  gcc4-core-4.3.2-2
+  libtool-2.2.7a-13
+  make-3.81-2
   sed-4.1.5-2
 
 Canonical homepage:
@@ -27,40 +27,38 @@ Canonical homepage:
 -------------------------------------------
 
 Build instructions:
-  unpack chmlib-0.39-1-src.tar.bz2
+  unpack chmlib-0.40-1-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./chmlib-0.39-1.cygport all
+  cygport ./chmlib-0.40-1.cygport all
 
 This will create:
-  /usr/src/chmlib-0.39-1-src.tar.bz2
-  /usr/src/chmlib-0.39-1.tar.bz2
-  /usr/src/libchm-devel-0.39-1.tar.bz2
-  /usr/src/libchm0-0.39-1.tar.bz2
+  /usr/src/chmlib-0.40-1-src.tar.bz2
+  /usr/src/chmlib-0.40-1.tar.bz2
+  /usr/src/libchm-devel-0.40-1.tar.bz2
+  /usr/src/libchm0-0.40-1.tar.bz2
 
 -------------------------------------------
 
-Files included in the binary package:
+Files included in the binary packages:
 
+(chmlib)
   /usr/bin/chm_http.exe
   /usr/bin/enum_chmLib.exe
   /usr/bin/enumdir_chmLib.exe
   /usr/bin/extract_chmLib.exe
   /usr/bin/test_chmLib.exe
-  /usr/share/doc/Cygwin/chmlib-0.39.README
-  /usr/share/doc/chmlib-0.39/AUTHORS
-  /usr/share/doc/chmlib-0.39/COPYING
-  /usr/share/doc/chmlib-0.39/INSTALL
-  /usr/share/doc/chmlib-0.39/NEWS
-  /usr/share/doc/chmlib-0.39/README
+  /usr/share/doc/chmlib/AUTHORS
+  /usr/share/doc/chmlib/COPYING
+  /usr/share/doc/chmlib/INSTALL
+  /usr/share/doc/chmlib/NEWS
+  /usr/share/doc/chmlib/README
 
-Files included in the runtime library package:
-
+(libchm0)
   /usr/bin/cygchm-0.dll
 
-Files included in the devel package:
-
+(libchm-devel)
   /usr/include/chm_lib.h
   /usr/include/lzx.h
   /usr/lib/libchm.a
@@ -71,20 +69,8 @@ Files included in the devel package:
 
 Port Notes:
 
------ version 0.39-1 -----
-Version bump.
-
------ version 0.38-1 -----
-Version bump.
-
------ version 0.37-1 -----
-Version bump to fix two security bugs.
-
------ version 0.36-1 -----
-Version bump.
-
------ version 0.35-1 -----
-Initial release for Cygwin.
+----- version 0.40-1 -----
+Initial release for Cygwin 1.7.
 
 
 Cygwin port maintained by:
