@@ -1,0 +1,22 @@
+NAME="chmlib"
+VERSION=0.40
+RELEASE=1
+CATEGORY="Libs"
+SUMMARY="Library for reading ITSS/CHM files"
+DESCRIPTION="CHMLIB is a library for dealing with Microsoft ITSS/CHM format
+files. Right now, it is a very simple library, but sufficient for dealing with
+all of the .chm files I've come across. Due to the fairly well-designed
+indexing built into this particular file format, even a small library is able
+to gain reasonably good performance indexing into ITSS archives."
+HOMEPAGE="http://www.jedrea.com/chmlib/"
+SRC_URI="${HOMEPAGE}/${P}.tar.bz2"
+PATCH_URI="0.39-no-undefined.patch"
+
+PKG_NAMES="chmlib libchm0 libchm-devel"
+chmlib_CATEGORY="Text"
+chmlib_SUMMARY="Utilities for reading ITSS/CHM files"
+chmlib_CONTENTS='usr/bin/*.exe usr/share/'
+libchm0_CONTENTS='usr/bin/cygchm-0.dll'
+libchm_devel_CONTENTS='usr/include/ usr/lib/'
+
+CYGCONF_ARGS="--disable-io64 --enable-examples"
